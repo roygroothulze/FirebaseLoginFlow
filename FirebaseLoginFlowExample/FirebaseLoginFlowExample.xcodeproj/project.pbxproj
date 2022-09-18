@@ -13,6 +13,7 @@
 		C034B98128D76C09003D5F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C034B97F28D76C09003D5F9F /* Main.storyboard */; };
 		C034B98328D76C0B003D5F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C034B98228D76C0B003D5F9F /* Assets.xcassets */; };
 		C034B98628D76C0B003D5F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C034B98428D76C0B003D5F9F /* LaunchScreen.storyboard */; };
+		C034B98F28D76D14003D5F9F /* FirebaseLoginFlow in Frameworks */ = {isa = PBXBuildFile; productRef = C034B98E28D76D14003D5F9F /* FirebaseLoginFlow */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C034B98F28D76D14003D5F9F /* FirebaseLoginFlow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = FirebaseLoginFlowExample;
+			packageProductDependencies = (
+				C034B98E28D76D14003D5F9F /* FirebaseLoginFlow */,
+			);
 			productName = FirebaseLoginFlowExample;
 			productReference = C034B97628D76C09003D5F9F /* FirebaseLoginFlowExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C034B96D28D76C09003D5F9F;
+			packageReferences = (
+				C034B98D28D76D14003D5F9F /* XCRemoteSwiftPackageReference "FirebaseLoginFlow" */,
+			);
 			productRefGroup = C034B97728D76C09003D5F9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C034B98D28D76D14003D5F9F /* XCRemoteSwiftPackageReference "FirebaseLoginFlow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roygroothulze/FirebaseLoginFlow";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C034B98E28D76D14003D5F9F /* FirebaseLoginFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C034B98D28D76D14003D5F9F /* XCRemoteSwiftPackageReference "FirebaseLoginFlow" */;
+			productName = FirebaseLoginFlow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C034B96E28D76C09003D5F9F /* Project object */;
 }
