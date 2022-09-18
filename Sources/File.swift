@@ -19,6 +19,11 @@ class WelcomeViewController: UIViewController {
         welcomeMessage.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
         welcomeMessage.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: 20).isActive = true
         
+        self.view.addSubview(dismissButton)
+        welcomeMessage.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 50).isActive = true
+        welcomeMessage.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+        welcomeMessage.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: 20).isActive = true
+        
     }
     
     var welcomeMessage: UILabel = {
@@ -27,5 +32,12 @@ class WelcomeViewController: UIViewController {
         view.text = "Welcome,"
         view.font = .preferredFont(forTextStyle: .title1, compatibleWith: .none)
         return view
+    }()
+    
+    var dismissButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.titleLabel?.text = "Continue"
+        return button
     }()
 }
